@@ -1,0 +1,17 @@
+[2023-03-19T15:37:38.766] [ERROR] default - ocurrio un error:  Error: listen EADDRINUSE: address already in use :::8080
+    at Server.setupListenHandle [as _listen2] (node:net:1372:16)
+    at listenInCluster (node:net:1420:12)
+    at Server.listen (node:net:1508:7)
+    at Object.<anonymous> (C:\Users\Santi\Dropbox\Mi PC (DESKTOP-FUL7H7I)\Documents\Personal\Coder-house\backend\desafios\desafiosEntregables\desafioEntregableQuince\main.js:141:14)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47 {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 8080
+}

@@ -1,0 +1,45 @@
+C:\Users\Santi\Dropbox\Mi PC (DESKTOP-FUL7H7I)\Documents\Personal\Coder-house\backend\desafios\desafiosEntregables\desafioEntregableCatorce>pm2 start main.js --name="server1" --watch -- PORT
+[PM2] Starting C:\Users\Santi\Dropbox\Mi PC (DESKTOP-FUL7H7I)\Documents\Personal\Coder-house\backend\desafios\desafiosEntregables\desafioEntregableCatorce\main.js in fork_mode (1 instance)
+[PM2] Done.
+┌─────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id  │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├─────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 0   │ main       │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 26   │ stopped   │ 0%       │ 0b       │ Santi    │ disabled │
+│ 1   │ server1    │ default     │ 1.0.0   │ fork    │ 13592    │ 1s     │ 0    │ online    │ 28.1%    │ 29.7mb   │ Santi    │ enabled  │
+└─────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+
+C:\Users\Santi\Dropbox\Mi PC (DESKTOP-FUL7H7I)\Documents\Personal\Coder-house\backend\desafios\desafiosEntregables\desafioEntregableCatorce>pm2 start main.js --name="server2" --watch -i max -- 8081
+[PM2] Starting C:\Users\Santi\Dropbox\Mi PC (DESKTOP-FUL7H7I)\Documents\Personal\Coder-house\backend\desafios\desafiosEntregables\desafioEntregableCatorce\main.js in cluster_mode (0 instance)
+[PM2] Done.
+┌─────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id  │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├─────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 0   │ main       │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 26   │ stopped   │ 0%       │ 0b       │ Santi    │ disabled │
+│ 1   │ server1    │ default     │ 1.0.0   │ fork    │ 10368    │ 0      │ 30   │ stopped   │ 0%       │ 0b       │ Santi    │ enabled  │
+│ 2   │ server2    │ default     │ 1.0.0   │ cluster │ 6968     │ 0      │ 1    │ stopped   │ 0%       │ 0b       │ Santi    │ enabled  │
+│ 3   │ server2    │ default     │ 1.0.0   │ cluster │ 13328    │ 0      │ 1    │ stopped   │ 0%       │ 0b       │ Santi    │ enabled  │
+│ 4   │ server2    │ default     │ 1.0.0   │ cluster │ 15208    │ 0      │ 1    │ stopped   │ 0%       │ 0b       │ Santi    │ enabled  │
+│ 5   │ server2    │ default     │ 1.0.0   │ cluster │ 2700     │ 0      │ 1    │ stopped   │ 0%       │ 0b       │ Santi    │ enabled  │
+└─────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+
+
+C:\Users\Santi\Dropbox\Mi PC (DESKTOP-FUL7H7I)\Documents\Personal\Coder-house\backend\desafios\desafiosEntregables\desafioEntregableCatorce>pm2 stop main.js
+[PM2] Applying action stopProcessId on app [main.js](ids: [ 0, 1, 2, 3, 4, 5 ])
+[PM2] [main](0) ✓
+[PM2] [server1](1) ✓
+[PM2] [server2](2) ✓
+[PM2] [server2](4) ✓
+[PM2] [server2](3) ✓
+[PM2] [server2](5) ✓
+┌─────┬────────────┬─────────────┬─────────┬─────────┬──────────┬────────┬──────┬───────────┬──────────┬──────────┬──────────┬──────────┐
+│ id  │ name       │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
+├─────┼────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
+│ 0   │ main       │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 26   │ stopped   │ 0%       │ 0b       │ Santi    │ disabled │
+│ 1   │ server1    │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 55   │ stopped   │ 0%       │ 0b       │ Santi    │ disabled │
+│ 2   │ server2    │ default     │ 1.0.0   │ cluster │ 0        │ 0      │ 21   │ stopped   │ 0%       │ 0b       │ Santi    │ disabled │
+│ 3   │ server2    │ default     │ 1.0.0   │ cluster │ 0        │ 0      │ 21   │ stopped   │ 0%       │ 0b       │ Santi    │ disabled │
+│ 4   │ server2    │ default     │ 1.0.0   │ cluster │ 0        │ 0      │ 20   │ stopped   │ 0%       │ 0b       │ Santi    │ disabled │
+│ 5   │ server2    │ default     │ 1.0.0   │ cluster │ 0        │ 0      │ 21   │ stopped   │ 0%       │ 0b       │ Santi    │ disabled │
+└─────┴────────────┴─────────────┴─────────┴─────────┴──────────┴────────┴──────┴───────────┴──────────┴──────────┴──────────┴──────────┘
+
+C:\Users\Santi\Dropbox\Mi PC (DESKTOP-FUL7H7I)\Documents\Personal\Coder-house\backend\desafios\desafiosEntregables\desafioEntregableCatorce>

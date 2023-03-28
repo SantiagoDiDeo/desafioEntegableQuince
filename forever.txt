@@ -1,0 +1,17 @@
+C:\Users\Santi\Dropbox\Mi PC (DESKTOP-FUL7H7I)\Documents\Personal\Coder-house\backend\desafios\desafiosEntregables\desafioEntregableCatorce>forever start main.js 8080
+warn:    --minUptime not set. Defaulting to: 1000ms
+warn:    --spinSleepTime not set. Your script will exit if it does not stay up for at least 1000ms
+info:    Forever processing file: main.js
+(node:15032) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:15032) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+
+C:\Users\Santi\Dropbox\Mi PC (DESKTOP-FUL7H7I)\Documents\Personal\Coder-house\backend\desafios\desafiosEntregables\desafioEntregableCatorce>forever list
+(node:32392) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:32392) Warning: Accessing non-existent property 'padLevels' of module exports inside circular dependency
+info:    Forever processes running
+data:        uid  command                            script                                                                                                                                                   forever pid   id logfile                          uptime
+data:    [0] UFYP "C:\Program Files\nodejs\node.exe" C:\Users\Santi\Dropbox\Mi PC (DESKTOP-FUL7H7I)\Documents\Personal\Coder-house\backend\desafios\desafiosEntregables\desafioEntregableCatorce\main.js 8080 16428   36324    C:\Users\Santi\.forever\UFYP.log 0:0:0:0.907
+
+C:\Users\Santi\Dropbox\Mi PC (DESKTOP-FUL7H7I)\Documents\Personal\Coder-house\backend\desafios\desafiosEntregables\desafioEntregableCatorce>

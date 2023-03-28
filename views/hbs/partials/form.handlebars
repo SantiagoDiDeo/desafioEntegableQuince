@@ -1,0 +1,89 @@
+{{!-- formulario post --}}
+{{!-- signup y login --}}
+<section class='p-4 bg-secondary'>
+  <h2>Signup</h2>
+  <form action="/api/signup" method="post">
+    <div>  
+      <span>name</span>
+      <input type="text" name="username">
+    </div>
+    <div>
+      <span>password</span>
+      <input type="text" name="password">
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+  <h2>login</h2>
+  <form action="/api/login" method="post">
+    <div>
+      <span>name</span>
+      <input type="text" name="username">
+    </div>
+    <div>
+      <span>password</span>
+      <input type="text" name="password">
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+    <button id="myButton">Logout</button>
+</section>
+<section class='p-4 bg-secondary'>
+	<h2 class='alert alert-dark text-center'>Ingrese Producto</h2>
+	<form id="form" action='/api/productos' method='POST'>
+		<div class='mb-3'>
+			<label class='form-label fw-bold' for='name'>Nombre</label>
+			<input class='form-control' type='text' name='title' id="title"/>
+		</div>
+		<div class='mb-3'>
+			<label class='form-label fw-bold' for='price'>Precio</label>
+			<input class='form-control' type='number' name='price' id="price" />
+		</div>
+		<div class='mb-3'>
+			<label class='form-label fw-bold' for='picture'>Foto URL</label>
+			<input class='form-control' type='text' name='thumbnail' id="thumbnail" />
+		</div>
+		<div class='mb-3'>
+			<input class='btn btn-primary' type='submit' value='Guardar' />
+		</div>
+	</form>
+	
+</section>
+{{!-- productlist --}}
+<section class='p-4 bg-success bg-gradient'>
+	<h2 class='alert alert-dark text-center'>Lista de productos</h2>
+	<div id="tableProducts"></div>
+	
+</section>
+{{!-- chat --}}
+<table id="message"></table>
+<form id="messageForm">
+	<div id= "" class="row">
+      <label for="userEmail" class="form-label">Usuario</label>
+      <div class="col-6 mb-3">      
+        <input type="email" class="form-control" id="userEmail" aria-describedby="pictureHelp">
+        <div id="pictureHelp" class="form-text">Ingrese su email</div>
+      </div>
+      <div class="col-6 mb-3">      
+        <input type="text" class="form-control" id="userName" aria-describedby="pictureHelp1">
+        <div id="pictureHelp1" class="form-text">Ingrese su nombre</div>
+      </div>
+      <div class="col-6 mb-3">      
+        <input type="text" class="form-control" id="userSurname" aria-describedby="pictureHelp2">
+        <div id="pictureHelp2" class="form-text">Ingrese su apellido</div>
+      </div>
+      <div class="col-6 mb-3">      
+        <input type="number" class="form-control" id="userAge" aria-describedby="pictureHelp3">
+        <div id="pictureHelp3" class="form-text">Ingrese su edad</div>
+      </div>
+      <div class="col-6 mb-3">      
+        <input type="text" class="form-control" id="userNickname" aria-describedby="pictureHelp4">
+        <div id="pictureHelp4" class="form-text">Ingrese su apodo</div>
+      </div>
+      <div class="col-6 mb-3">      
+        <input type="text" class="form-control" id="userAvatar" aria-describedby="pictureHelp5">
+        <div id="pictureHelp5" class="form-text">Ingrese url de su avatar (foto, logo)</div>
+      </div>
+
+    <input type="text" name="mensaje" id="userMensaje" placeholder="Ingrese su mensaje">
+    <button type="button" onclick="addMessage(messageForm)" id="button">Add</button>
+</form>

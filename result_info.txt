@@ -1,0 +1,10 @@
+{
+  "datos": {
+    "carpeta de proyecto": "C:\\Users\\Santi\\Dropbox\\Mi PC (DESKTOP-FUL7H7I)\\Documents\\Personal\\Coder-house\\backend\\desafios\\desafiosEntregables\\desafioEntregableQuince",
+    "plataforma": "win32",
+    "version de node": "v16.15.0",
+    "memoria reservada": 93069312,
+    "process id": 4964,
+    "numero de procesadores": 4
+  }
+}
